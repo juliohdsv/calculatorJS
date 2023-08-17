@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blackColor: #000;
+    --darkColor: #534e4e;
+    --darkModelColor: #2c2b2b;
+    --whiteColor: #fff;
+    --orangeColor: #e7750a;
+}
+
+body{
+    font-family: fira code;
+    background-color: var(--darkModelColor);
+    color: var(--whiteColor);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container{
+    padding: 5px;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    border: 1px solid var(--whiteColor);
+    background-color: var(--blackColor);
+}
+
+.container #result{
+    font-size: 2.5rem;
+    border-radius: 8px ;
+    border: 1px solid var(--darkColor);
+    margin: 20px;
+    padding: 30px;
+    text-align: right;
+    max-width: 15ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container .container-btns{
+    display: flex;
+    margin: 30px;
+}
+
+.container .container-btns tr:last-child td:nth-child(4n+1){
+    display: inline-flex;
+    border-radius: 10%;
+}
+
+.container .container-btns tr:last-child td:nth-child(4n+1) button:nth-child(4n+1){
+    display: flex;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+
+}
+
+
+.container .container-btns tr td{
+    background-color: var(--darkColor);
+    display: inline-flex;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer; 
+    transition: 0.8s;
+}
+
+.container .container-btns tr td .btns{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    transition: 0.8s;
+}
+
+
+.container .container-btns tr td:last-child
+{
+    background-color: var(--orangeColor);
+}
+
+
+.container .container-btns tr td:hover{
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    transition: 0.8s;
+}

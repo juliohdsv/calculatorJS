@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="calculadora.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="result">0</h1>
+        <table class="container-btns">
+            <tr>
+                <td><buttons class="btns" onclick="clean()">AC</buttons></td>
+                <td><buttons class="btns" onclick="back()"><</buttons></td>
+                <td><buttons class="btns" onclick="insert('%')">%</buttons></td>
+                <td><buttons class="btns" onclick="insert('/')">/</buttons></td>
+            </tr>
+            <tr>
+                <td class="btns"><buttons class="btns" onclick="insert('7')">7</buttons></td>
+                <td><buttons class="btns" onclick="insert('8')">8</buttons></td>
+                <td><buttons class="btns" onclick="insert('9')">9</buttons></td>
+                <td><buttons class="btns" onclick="insert('*')">x</buttons></td>
+            </tr>
+            <tr>
+                <td><buttons class="btns" onclick="insert('4')">4</buttons></td>
+                <td><buttons class="btns" onclick="insert('5')">5</buttons></td>
+                <td><buttons class="btns" onclick="insert('6')">6</buttons></td>
+                <td><buttons class="btns" onclick="insert('-')">-</buttons></td>
+            </tr>
+            <tr>
+                <td><buttons class="btns" onclick="insert('1')">1</buttons></td>
+                <td><buttons class="btns" onclick="insert('2')">2</buttons></td>
+                <td><buttons class="btns" onclick="insert('3')">3</buttons></td>
+                <td><buttons class="btns" onclick="insert('+')">+</buttons></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 150px;"><buttons style="width: 140px;" class="btns" onclick="insert('0')">0</buttons></td>
+                <td><buttons class="btns" onclick="insert('.')">,</buttons></td>
+                <td><buttons class="btns" onclick="calculate()">=</buttons></td>
+            </tr>
+        </table>
+</body>
+</html>
